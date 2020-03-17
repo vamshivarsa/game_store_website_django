@@ -1,7 +1,7 @@
 # game_store_ webiste_django
 
  this is website created with django
-
+this website also include a todo_list option(we can add  new task in todo list and deleted the task )
 
 How to Run: 
 
