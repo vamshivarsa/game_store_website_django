@@ -3,15 +3,31 @@
 {% block body %}
 <html>
     <head>
-        
+        <link rel="stylesheet" type="text/css" href="static/style.css">
     </head>
     
     <body>
-       <br>
-
-       <ul>
-        {% for list in object_list %}
+        <ul>
+            {% for list in object_list %}
+        <!--
         <li><a href="/games/{{list.id}}/">{{ list.name }}</a></li>
+         -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{list.game_img}}">
+                        <div class="names">
+                            <h3>{{list.name}}</h3>
+                            <p><a href="/games/{{list.id}}/" class = "btn btn-primary" role = "button">
+                                Details
+                               </a>
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
         {% endfor %}
         </ul>
         </body>
