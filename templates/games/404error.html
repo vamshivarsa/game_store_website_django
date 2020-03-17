@@ -4,16 +4,14 @@
 {% block body %}
 <html>
     <head>
-        <title>
-            GAME FULL DETAILS
-        </title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
     </head>
     <body bgcolor="black">
         <br>
         <h3><font color="white">Game Name: {{ game.name }}</h3>
         GAME_TYPE: {{ game.game_type}}</font><br>
         <br>
-        <img src="{{game.game_img}}">
+        <img class="image" src="{{game.game_img}}">
         <marquee>
            <h2> <font color="yellow"> price : {{ game.price }} </font><h2>
         </marquee>
