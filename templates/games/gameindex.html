@@ -7,17 +7,15 @@
     </head>
     
     <body>
-        <ul>
             {% for list in object_list %}
         <!--
         <li><a href="/games/{{list.id}}/">{{ list.name }}</a></li>
          -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+        
+                <div class="col-md-3">
                     <div class="thumbnail">
                         <img src="{{list.game_img}}">
-                        <div class="names">
+                        <div class="names" style="display:inline-block;">
                             <h3>{{list.name}}</h3>
                             <p><a href="/games/{{list.id}}/" class = "btn btn-primary" role = "button">
                                 Details
@@ -26,10 +24,8 @@
                         </div>
                     </div>
                  </div>
-            </div>
-        </div>
+            
         {% endfor %}
-        </ul>
         </body>
 </html>
 {% endblock %}           
