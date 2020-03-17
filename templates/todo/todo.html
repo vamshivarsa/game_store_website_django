@@ -1,0 +1,30 @@
+{% extends 'games/base.html' %}
+
+{% block body %}
+<font color="red">
+<h1> this is todo page</h1>
+
+<!--<ul>
+    <li> todo item 1</li>
+    <li> todo item 2</li>
+    <li> todo item 3</li> 
+</ul>--->
+
+
+    <ul>
+    {% for todo_item in all_list %}
+       <h5><li>{{ todo_item.field }}
+           <form action="/deleteTodo/{{todo_item.id}}/" 
+                 style="display: inline;"
+                 method="POST">{% csrf_token %}
+               <input type="submit" value="Delete"/>
+           </form>
+       </li></h5>
+       {% endfor %}
+</ul></font>
+
+<form action="/addTodo/" method="POST">{% csrf_token %}
+    <input type="text" name="filed"/>
+    <input type="submit" value="Add"/>
+</form>
+{% endblock %}

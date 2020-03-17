@@ -1,0 +1,42 @@
+{% extends 'games/base.html' %}
+
+{% block body %}
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+       <br>
+
+       <ul>
+        {% for list in object_list %}
+        <li><a href="/games/{{list.id}}/">{{ list.name }}</a></li>
+        {% endfor %}
+        </ul>
+        </body>
+</html>
+{% endblock %}           
+
+
+
+
+<!-- this is old code for render code
+       <ul>
+            {%  for list in all_games %}
+             <li><a href="/games/{{list.id}}/">{{ list.name }}</a></li>
+
+            {% endfor%}
+        </ul>
+        
+    </body>-->
+<!----------------------------------------------------------------------->
+   
+
+<!-- for generic views this code
+    
+    -------------------------->
+    
+
+
+    
