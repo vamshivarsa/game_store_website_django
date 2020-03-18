@@ -1,7 +1,22 @@
 body{
     background: rgb(231, 224, 224) url("img/web1.jpg");
 }
-.image{
-    height: 500px;
+
+
+.game_names {
+
+    color: azure;
+}
+
+.backframe {
+
+    height: 300px;
     width: 300px;
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: 100%;
+
+
 }
