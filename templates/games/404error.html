@@ -2,16 +2,21 @@
 {% extends 'games/base.html' %}
 
 {% block body %}
-<html>
+<!doctype html>
     <head>
         <link rel="stylesheet" type="text/css" href="static/style.css">
     </head>
     <body bgcolor="black">
         <br>
-        <h3><font color="white">Game Name: {{ game.name }}</h3>
-        GAME_TYPE: {{ game.game_type}}</font><br>
+        <div class="jumbotron jumbotron-fluid">
+        <h1><font color="blue">{{ game.name }}</font></h1>
+        </div>
+        <font color="yellow">
+        GAME_TYPE: {{ game.game_type}}
+        </font>
         <br>
-        <img class="image" src="{{game.game_img}}">
+        <br>
+        <center><img width="400" height="500" src="{{game.game_img}}"  border="5"></center>
         <marquee>
            <h2> <font color="yellow"> price : {{ game.price }} </font><h2>
         </marquee>
