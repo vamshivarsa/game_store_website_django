@@ -21,18 +21,19 @@
                        
                         <div class="row">
                              <div class="col-md-12">
-                             <img src="{{list.game_img}}" class="img-thumbnail" alt="Cinque Terre">
+                                <div class="posters">
+                                    <p><a href="/games/{{list.id}}/" class = "btn btn-primary" role = "button">
+                                            <img src="{{list.game_img}}" class="img-thumbnail" alt="Cinque Terre">
+                                        </a>
+                                    </p>
+                                </div>    
                              </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="game_names">
-                                <h4>{{list.name}}</h4>
-                                <p><a href="/games/{{list.id}}/" class = "btn btn-primary" role = "button">
-                                     Details
-                                    </a>
-                                </p>
+                                    <h4>{{list.name}}</h4>                              
                                 </div>
                             </div>
                         </div>
